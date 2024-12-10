@@ -1,0 +1,7 @@
+default: EveNordic_Example
+build_dir: C:/NRFTestCode/EveNordic_Example/build_7
+domains:
+  - name: EveNordic_Example
+    build_dir: C:/NRFTestCode/EveNordic_Example/build_7/EveNordic_Example
+flash_order:
+  - EveNordic_Example

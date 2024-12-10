@@ -1,0 +1,19 @@
+description: FT81x EVE Display Controller
+
+compatible: "ftdi,ft81x"
+
+include: spi-device.yaml
+
+properties:
+  reg:
+    required: true
+
+  pd-gpios:
+    type: phandle-array
+    required: true
+    description: Power down pin
+
+  int-gpios:
+    type: phandle-array
+    required: true
+    description: Interrupt pin 

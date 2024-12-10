@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/NRFTestCode/EveNordic_Example/build_7/_sysbuild/sysbuild/images/CMakeFiles/EveNordic_Example"
+		},
+		{
+			"file" : "C:/NRFTestCode/EveNordic_Example/build_7/_sysbuild/sysbuild/images/CMakeFiles/EveNordic_Example.rule"
+		},
+		{
+			"file" : "C:/NRFTestCode/EveNordic_Example/build_7/_sysbuild/sysbuild/images/CMakeFiles/EveNordic_Example-complete.rule"
+		},
+		{
+			"file" : "C:/NRFTestCode/EveNordic_Example/build_7/_sysbuild/sysbuild/images/EveNordic_Example-prefix/src/EveNordic_Example-stamp/EveNordic_Example-build.rule"
+		},
+		{
+			"file" : "C:/NRFTestCode/EveNordic_Example/build_7/_sysbuild/sysbuild/images/EveNordic_Example-prefix/src/EveNordic_Example-stamp/EveNordic_Example-configure.rule"
+		},
+		{
+			"file" : "C:/NRFTestCode/EveNordic_Example/build_7/_sysbuild/sysbuild/images/EveNordic_Example-prefix/src/EveNordic_Example-stamp/EveNordic_Example-download.rule"
+		},
+		{
+			"file" : "C:/NRFTestCode/EveNordic_Example/build_7/_sysbuild/sysbuild/images/EveNordic_Example-prefix/src/EveNordic_Example-stamp/EveNordic_Example-install.rule"
+		},
+		{
+			"file" : "C:/NRFTestCode/EveNordic_Example/build_7/_sysbuild/sysbuild/images/EveNordic_Example-prefix/src/EveNordic_Example-stamp/EveNordic_Example-mkdir.rule"
+		},
+		{
+			"file" : "C:/NRFTestCode/EveNordic_Example/build_7/_sysbuild/sysbuild/images/EveNordic_Example-prefix/src/EveNordic_Example-stamp/EveNordic_Example-patch.rule"
+		},
+		{
+			"file" : "C:/NRFTestCode/EveNordic_Example/build_7/_sysbuild/sysbuild/images/EveNordic_Example-prefix/src/EveNordic_Example-stamp/EveNordic_Example-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"EveNordic_Example"
+		],
+		"name" : "EveNordic_Example"
+	}
+}
