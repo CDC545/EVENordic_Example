@@ -10,8 +10,8 @@ Connect the EVE display to the nRF5340-DK using the Arduino headers:
 - MOSI: P1.14
 - MISO: P1.13
 - CS: P1.12
-- PD: P1.16 (Power Down)
-- INT: P1.17 (Interrupt)
+- PD: P1.10 (Power Down)
+- INT: P1.11 (Interrupt)
 
 ## Software Requirements
 
