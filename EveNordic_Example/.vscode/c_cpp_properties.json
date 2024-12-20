@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Zephyr",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${env:ZEPHYR_BASE}/include",
+                "${env:ZEPHYR_BASE}/include/zephyr",
+                "${env:ZEPHYR_BASE}/lib/libc/minimal/include",
+                "${workspaceFolder}/build/zephyr/include/generated",
+                "${env:ZEPHYR_BASE}/soc/arm/nordic_nrf/nrf53",
+                "${env:ZEPHYR_BASE}/drivers"
+            ],
+            "defines": [],
+            "compilerPath": "${env:ZEPHYR_SDK_INSTALL_DIR}/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-gcc-arm"
+        }
+    ],
+    "version": 4
+} 

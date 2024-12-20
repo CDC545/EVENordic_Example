@@ -1,0 +1,50 @@
+/ {
+    chosen {
+        zephyr,display = &eve_display;
+    };
+};
+
+&pinctrl {
+    spi2_default: spi2_default {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 1, 15)>,    // P1.15 (SCK)
+                    <NRF_PSEL(SPIM_MISO, 1, 14)>,   // P1.14 (MISO)
+                    <NRF_PSEL(SPIM_MOSI, 1, 13)>;   // P1.13 (MOSI)
+        };
+    };
+
+    spi2_sleep: spi2_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 1, 15)>,
+                    <NRF_PSEL(SPIM_MISO, 1, 14)>,
+                    <NRF_PSEL(SPIM_MOSI, 1, 13)>;
+            low-power-enable;
+        };
+    };
+};
+
+&gpio1 {
+    status = "okay";
+};
+
+&spi2 {
+    status = "okay";
+    pinctrl-0 = <&spi2_default>;
+    pinctrl-1 = <&spi2_sleep>;
+    pinctrl-names = "default", "sleep";
+    cs-gpios = <&gpio1 12 GPIO_ACTIVE_LOW>;  // P1.12 (CS)
+
+    eve_display: ft81x@0 {
+        compatible = "ftdi,ft81x";
+        reg = <0>;
+        spi-max-frequency = <20000000>;
+        pd-gpios = <&gpio1 10 GPIO_ACTIVE_LOW>;    // P1.10 (PD) - Active LOW
+        int-gpios = <&gpio1 11 GPIO_ACTIVE_LOW>;   // P1.11 (INT) - Active LOW
+    };
+};
+
+&spi1 {
+    status = "disabled";
+};
+
+
